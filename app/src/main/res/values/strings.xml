@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Assignment3</string>
+    <string name="vote_pls">Vote Please</string>
+    <string name="voter_name">Name: </string>
+    <string name="plain_txt">Enter Name</string>
+    <string name="voter_id"> ID: </string>
+    <string name="plain_id">Enter ID</string>
+    <string name="Choose_candidate">Choose Candidate</string>
+    <string name="btn_accpt">ACCEPT</string>
+    <string name="btn_vote">VOTE</string>
+    <string-array name="CandidateItem">
+        <item>Choose Candidate</item>
+        <item>Joseph R. Biden Jr.</item>
+        <item>Donald J. Trump</item>
+        <item>Elizabeth Warren</item>
+    </string-array>
+    <string name="txt_cdetails">Candidate Details</string>
+    <string name="txt_cname">Name</string>
+    <string name="txt_vote">Total VOTE</string>
+    <string name="c1">Joseph R. Biden Jr.</string>
+    <string name="c2">Donald J. Trump</string>
+    <string name="c3">Elizabeth Warren</string>
+    <string name="start_vote">Start Voting</string>
+
+
+
+
+</resources>

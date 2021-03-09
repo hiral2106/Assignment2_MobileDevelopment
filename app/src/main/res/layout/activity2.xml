@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/voteimg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aladin"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="@string/vote_pls"
+            android:textColor="#F4EFEF"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/v_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F8F7F8"
+                android:fontFamily="@font/aladin"
+                android:padding="10dp"
+                android:text="@string/voter_name"
+                android:textColor="#090909"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/voter_name"
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:background="#CFCCCF"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/v_id"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F6F5F6"
+                android:fontFamily="@font/aladin"
+                android:padding="10dp"
+                android:text="@string/voter_id"
+                android:textColor="#0C0C0C"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/voter_id"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:background="#FFCFCCCF"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="30dp">
+
+            <Spinner
+                android:id="@+id/spinnerCandidate"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="#FFCFCCCF"
+                android:entries="@array/CandidateItem" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ToggleButton
+                android:id="@+id/toggleButton"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="@string/btn_accpt"
+                android:textOff="Refuse"
+                android:textOn="Accept" />
+
+            <Button
+                android:id="@+id/btn_vote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="addVote"
+                android:text="@string/btn_vote"
+                android:textColor="#090808"
+                app:backgroundTint="#FDFCFD" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

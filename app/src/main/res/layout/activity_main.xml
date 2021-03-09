@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="startVoting"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/voteimg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aladin"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/txt_cdetails"
+            android:textColor="#F8F3F3"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:background="#D6CCCC"
+                android:fontFamily="@font/aladin"
+                android:text="@string/txt_cname"
+                android:textColor="#0C0C0C"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_weight="1"
+                android:background="#D6CCCC"
+                android:fontFamily="@font/aladin"
+                android:text="@string/txt_vote"
+                android:textColor="#090909"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#D6CCCC"
+                android:fontFamily="@font/aladin"
+                android:text="@string/c1"
+                android:textColor="#050505"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/c1_voteCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_weight="1"
+                android:background="#D6CCCC"
+                android:textColor="#0B0B0B"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#D6CCCC"
+                android:fontFamily="@font/aladin"
+                android:text="@string/c2"
+                android:textColor="#0C0C0C"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/c2_voteCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_weight="1"
+                android:background="#D6CCCC"
+                android:textColor="#121111"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#D6CCCC"
+                android:fontFamily="@font/aladin"
+                android:text="@string/c3"
+                android:textColor="#0C0C0C"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/c3_voteCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_weight="1"
+                android:background="#D6CCCC"
+                android:textColor="#0E0E0E"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/vote_button"
+                android:layout_width="0dp"
+                android:layout_height="69dp"
+                android:layout_weight="1"
+                android:onClick="startVoting"
+                android:text="@string/start_vote"
+                android:textColor="#020202"
+                android:textSize="20sp"
+                app:backgroundTint="#B6B3B6" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
